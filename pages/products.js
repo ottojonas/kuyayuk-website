@@ -4,6 +4,7 @@ import { WorkGridItem } from '../components/grid-items'
 import paloSantosBurning from '../public/images/paloSantos/paloSantosBuring01.jpg'
 import maskImage from '../public/images/masks/devilMask.jpg'
 import azufreImage from '../public/images/azufre/azufreImage01.jpg'
+import ashwagandaImage from '../public/images/ashwaganda/ashwagandaImage.jpg'
 import Layout from '../components/layouts/article'
 const Products = () => {
   return (
@@ -28,6 +29,11 @@ const Products = () => {
               id="azufre"
               title="Azufre"
               thumbnail={azufreImage}
+            ></WorkGridItem>
+            <WorkGridItem
+              id="ashwaganda"
+              title="Ashwaganda"
+              thumbnail={ashwagandaImage}
             ></WorkGridItem>
           </Section>
         </SimpleGrid>

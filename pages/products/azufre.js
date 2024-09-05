@@ -7,13 +7,13 @@ const Product = () => {
     <Layout title="Azufre">
       <Container>
         <Title>
-          Asufre <Badge>Healing</Badge>
+          Azufre <Badge>Healing</Badge>
         </Title>
         <ProductImage
           src="/images/azufre/azufreImage01.jpg"
           alt="azufreImage"
         />
-        <P>placeholder for asufre information</P>
+        <P>placeholder for azufre information</P>
         <Button colorScheme="teal">Buy Now</Button>
         <List>
           <ListItem>
