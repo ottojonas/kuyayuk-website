@@ -10,8 +10,8 @@ const Product = () => (
         Palo Santos<Badge>Healing</Badge>
       </Title>
       <ProductImage
-        src="/images/products/paloSantosBuring01.jpg"
-        alt="paloSantos"
+        src="/images/paloSantos/paloSantosInABox.jpg"
+        alt="paloSantosInABox"
       />
       <P>palo santos information placeholder</P>
       <Button colorScheme="teal">Buy Now</Button>

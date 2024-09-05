@@ -8,12 +8,17 @@ import {
   Link,
   List,
   ListItem,
+  SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
+import { GridItem } from '../components/grid-items'
 import Section from '../components/section'
 import { IoLogoInstagram } from 'react-icons/io5'
 import { EmailIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
+import paloSantosThumbnail from '../public/images/paloSantos/paloSantosBuring01.jpg'
+import azufreThumbnail from '../public/images/azufre/azufreImage02.jpg'
+
 const Page = () => {
   return (
     <Container>
@@ -38,12 +43,28 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           About Kuyay
         </Heading>
+        <p>
+          Providing an authentic and original Peruvian experience to those who
+          want to give it a try.
+        </p>
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Popular Products
         </Heading>
+        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <GridItem
+            href="/products/paloSantos"
+            title="Palo Santos"
+            thumbnail={paloSantosThumbnail}
+          ></GridItem>
+          <GridItem
+            href="/products/azufre"
+            title="Azufre"
+            thumbnail={azufreThumbnail}
+          ></GridItem>
+        </SimpleGrid>
       </Section>
 
       <Section delay={0.3}>
@@ -59,6 +80,17 @@ const Page = () => {
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
                 @kuyayuk
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="mailto:kuyayuk@outlook.com" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={EmailIcon} />}
+              >
+                Email
               </Button>
             </Link>
           </ListItem>
