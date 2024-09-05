@@ -16,14 +16,9 @@ const Products = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="paloSantos"
-              title="Palo Santos"
-              thumbnail={paloSantosBurning}
-            ></WorkGridItem>
-            <WorkGridItem
-              id="mask"
-              title="Mask"
-              thumbnail={maskImage}
+              id="ashwaganda"
+              title="Ashwaganda"
+              thumbnail={ashwagandaImage}
             ></WorkGridItem>
             <WorkGridItem
               id="azufre"
@@ -31,9 +26,14 @@ const Products = () => {
               thumbnail={azufreImage}
             ></WorkGridItem>
             <WorkGridItem
-              id="ashwaganda"
-              title="Ashwaganda"
-              thumbnail={ashwagandaImage}
+              id="mask"
+              title="Masks"
+              thumbnail={maskImage}
+            ></WorkGridItem>
+            <WorkGridItem
+              id="paloSantos"
+              title="Palo Santos"
+              thumbnail={paloSantosBurning}
             ></WorkGridItem>
           </Section>
         </SimpleGrid>
