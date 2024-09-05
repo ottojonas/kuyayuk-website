@@ -1,6 +1,6 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { WorkGridItem } from '../components/grid-items'
 import paloSantosBurning from '../public/images/paloSantos/paloSantosBuring01.jpg'
 import maskImage from '../public/images/masks/devilMask.jpg'
 import azufreImage from '../public/images/azufre/azufreImage01.jpg'

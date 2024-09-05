@@ -13,7 +13,7 @@ import {
   IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
-
+import Logo from './logo.js'
 import ThemeToggleButton from './toggle-theme-button'
 import { HamburgerIcon } from '@chakra-ui/icons'
 const LinkItem = ({ href, path, children }) => {
