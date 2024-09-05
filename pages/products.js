@@ -20,16 +20,22 @@ const Products = () => {
               title="Ashwaganda"
               thumbnail={ashwagandaImage}
             ></WorkGridItem>
+          </Section>
+          <Section>
             <WorkGridItem
               id="azufre"
               title="Azufre"
               thumbnail={azufreImage}
             ></WorkGridItem>
+          </Section>
+          <Section>
             <WorkGridItem
               id="mask"
               title="Masks"
               thumbnail={maskImage}
             ></WorkGridItem>
+          </Section>
+          <Section>
             <WorkGridItem
               id="paloSantos"
               title="Palo Santos"
