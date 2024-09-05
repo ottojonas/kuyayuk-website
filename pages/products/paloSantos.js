@@ -19,6 +19,8 @@ const Product = () => (
         <ListItem>
           <Meta>Origin</Meta>
           <span>Country of Origin</span>
+        </ListItem>
+        <ListItem>
           <Meta>How To Use</Meta>
           <span>How to use information</span>
         </ListItem>

@@ -17,6 +17,10 @@ const Product = () => (
           <Meta>Origin</Meta>
           <span>Country of Origin</span>
         </ListItem>
+        <ListItem>
+          <Meta>How to Use</Meta>
+          <span>How to use information</span>
+        </ListItem>
       </List>
     </Container>
   </Layout>
