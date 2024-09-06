@@ -4,6 +4,10 @@ import { WorkGridItem } from '../components/grid-items.js'
 import Layout from '../components/layouts/article.js'
 import ashwagandaThumbnail from '../public/images/ashwaganda/ashwagandaImage.jpg'
 import azufreThumbnail from '../public/images/azufre/azufreImage02.jpg'
+import maskThumbnail from '../public/images/masks/devilMask.jpg'
+import paloSantosThumbnail from '../public/images/paloSantos/paloSantosBuring02.jpg'
+import P from '../components/paragraph.js'
+
 const Information = () => {
   return (
     <Layout title="Information">
@@ -17,14 +21,32 @@ const Information = () => {
               id="ashwaganda"
               title="Ashwaganda"
               thumbnail={ashwagandaThumbnail}
-            ></WorkGridItem>
+            >
+              <P>Ashwaganda ...</P>
+            </WorkGridItem>
           </Section>
           <Section>
             <WorkGridItem
               id="azufre"
               title="Azufre"
               thumbnail={azufreThumbnail}
-            ></WorkGridItem>
+            >
+              <P>Azufre ...</P>
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem id="mask" title="Masks" thumbnail={maskThumbnail}>
+              <P>Masks ...</P>
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="paloSantos"
+              title="Palo Santos"
+              thumbnail={paloSantosThumbnail}
+            >
+              <P>Palo Santos ...</P>
+            </WorkGridItem>
           </Section>
         </SimpleGrid>
       </Container>
