@@ -7,7 +7,7 @@ const Product = () => (
   <Layout title="Palo Santos">
     <Container>
       <Title>
-        Palo Santos<Badge>Healing</Badge>
+        Palo Santos<Badge>Spiritual</Badge>
       </Title>
       <ProductImage
         src="/images/paloSantos/paloSantosInABox.jpg"
