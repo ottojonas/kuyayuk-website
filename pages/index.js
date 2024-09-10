@@ -55,7 +55,7 @@ const Page = () => {
             overflow="hidden"
           >
             <Image
-              src="/icons/inspo/logoTemplate.png"
+              src="/images/logoTemplate/logoTemplate.png"
               alt="frontImage"
               width="100"
               height="100"
