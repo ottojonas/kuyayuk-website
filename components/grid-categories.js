@@ -3,17 +3,17 @@ import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
-export const CategoryGridItem = ({ children, href, label, thumbnail }) => (
+export const CategoryGridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
     <LinkBox cursor="pointer">
       <Image
         src={thumbnail}
-        alt={label}
+        alt={title}
         className="grid-item-category-thumbnail"
         loading="lazy"
       />
       <LinkOverlay href={href}>
-        <Text mt={2}>{label}</Text>
+        <Text mt={2}>{title}</Text>
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
