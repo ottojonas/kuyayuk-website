@@ -5,7 +5,7 @@ import spiritualCat from '../public/images/paloSantos/paloSantosInABox.jpg'
 import healingCat from '../public/images/azufre/azufreImage02.jpg'
 import clothingCat from '../public/images/masks/devilMask.jpg'
 import Section from '../components/section'
-import leavesThumbnail from ''
+import leavesThumbnail from '../public/images/herb/herbs-translation.jpg'
 
 const Categories = () => {
   return (

@@ -8,7 +8,7 @@ const Product = () => {
     <Layout title="Herb">
       <Title>
         Herbs<Badge>Herbal</Badge>
-        <ProductImage src="" alt="" />
+        <ProductImage src="/images/herb/herbs-translation.jpg" alt="herbal" />
         <P>
           This plant is known as one of the best laxatives or purgatives. It
           eliminates all kinds of parasites, including and not limited to:
