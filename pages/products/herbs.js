@@ -9,7 +9,11 @@ const Product = () => {
       <Title>
         Herbs<Badge>Herbal</Badge>
         <ProductImage src="" alt="" />
-        <P>herb information placeholder </P>
+        <P>
+          This plant is known as one of the best laxatives or purgatives. It
+          eliminates all kinds of parasites, including and not limited to:
+          tapeworm, oxshuro, ascaris and Trichuris
+        </P>
         <Button colorScheme="teal">Buy Now</Button>
         <List>
           <ListItem>
@@ -18,7 +22,10 @@ const Product = () => {
           </ListItem>
           <ListItem>
             <Meta>How to Use</Meta>
-            <span>How to use information</span>
+            <span>
+              Boil 1/3 of the senna leaves in a 1/4 liter of water <br />
+              Drinkk on an empty stomach 3 times a week.
+            </span>
           </ListItem>
         </List>
       </Title>
