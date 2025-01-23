@@ -12,8 +12,8 @@ const Category = () => {
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <WorkGridItem
-          id="leaves"
-          title="Leaves"
+          id="herbs"
+          title="Herbs"
           thumbnail={leavesThumbnail}
         ></WorkGridItem>
       </SimpleGrid>
