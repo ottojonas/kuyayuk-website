@@ -82,6 +82,13 @@ const Product = () => {
               release fumes).
             </span>
           </ListItem>
+          <ListItem>
+            <Meta>Warning</Meta>
+            <span>
+              If you have sulfur allergies or sensitive skin, avoid direct
+              contact and consult a professional if needed.
+            </span>
+          </ListItem>
         </List>
       </Container>
     </Layout>
