@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Box,
   Button,
@@ -21,17 +21,26 @@ import paloSantosThumbnail from '../public/images/paloSantos/paloSantosBuring01.
 import azufreThumbnail from '../public/images/azufre/azufreImage02.jpg'
 
 const Page = () => {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   return (
     <Container>
-      <Box
-        borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        p={3}
-        mb={6}
-        align="center"
-      >
-        Welcome to KuyayUK
-      </Box>
+      {/* Ensure that the content rendered on the server matches the content rendered on the client */}
+      {isClient && (
+        <Box
+          borderRadius="lg"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          p={3}
+          mb={6}
+          align="center"
+        >
+          Welcome to KuyayUK
+        </Box>
+      )}
 
       <Box>
         <Box>

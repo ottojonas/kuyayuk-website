@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Box,
   Button,
   Container,
   Heading,
   Icon,
-  Link,
+  Link as ChakraLink,
+  Link, // Add this import
   List,
   ListItem,
   SimpleGrid,
@@ -21,17 +22,26 @@ import paloSantosThumbnail from '../public/images/paloSantos/paloSantosBuring01S
 import azufreThumbnail from '../public/images/azufre/azufreImage02.jpg'
 
 const Page = () => {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   return (
     <Container>
-      <Box
-        borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        p={3}
-        mb={6}
-        align="center"
-      >
-        Welcome to KuyayUK
-      </Box>
+      {/* Ensure that the content rendered on the server matches the content rendered on the client */}
+      {isClient && (
+        <Box
+          borderRadius="lg"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          p={3}
+          mb={6}
+          align="center"
+        >
+          Welcome to KuyayUK
+        </Box>
+      )}
 
       <Box>
         <Box>
@@ -127,15 +137,16 @@ const Page = () => {
         <p>Hear about updates and upcoming releases</p>
 
         <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/"
-            scroll={false}
-            leftIcon={<Icon as={EmailIcon} />}
-            colorScheme="teal"
-          >
-            Sign up to our newsletter here
-          </Button>
+          <NextLink href="/" passHref scroll={false}>
+            <Button
+              as="a"
+              scroll={false}
+              leftIcon={<Icon as={EmailIcon} />}
+              colorScheme="teal"
+            >
+              Sign up to our newsletter here
+            </Button>
+          </NextLink>
         </Box>
       </Section>
     </Container>
