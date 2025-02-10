@@ -1,9 +1,9 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-items'
-import paloSantosBurning from '../public/images/paloSantos/paloSantosBuring01.jpg'
+import paloSantosBurning from '../public/images/paloSantos/paloSantosBuring01Sqaure.jpg'
 import maskImage from '../public/images/masks/devilMask.jpg'
-import azufreImage from '../public/images/azufre/azufreImage01.jpg'
+import azufreImage from '../public/images/azufre/azufreImage02.jpg'
 import ashwagandaImage from '../public/images/ashwaganda/ashwagandaImage.jpg'
 import Layout from '../components/layouts/article'
 const Products = () => {
@@ -16,23 +16,9 @@ const Products = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="ashwaganda"
-              title="Ashwaganda"
-              thumbnail={ashwagandaImage}
-            ></WorkGridItem>
-          </Section>
-          <Section>
-            <WorkGridItem
               id="azufre"
               title="Azufre"
               thumbnail={azufreImage}
-            ></WorkGridItem>
-          </Section>
-          <Section>
-            <WorkGridItem
-              id="mask"
-              title="Masks"
-              thumbnail={maskImage}
             ></WorkGridItem>
           </Section>
           <Section>
