@@ -5,7 +5,7 @@ import spiritualCat from '../public/images/paloSantos/paloSantosInABox.jpg'
 import healingCat from '../public/images/azufre/azufreImage02.jpg'
 import clothingCat from '../public/images/masks/devilMask.jpg'
 import Section from '../components/section'
-import leavesThumbnail from ''
+import leavesThumbnail from '../public/images/herbal/herbal1.jpg'
 
 const Categories = () => {
   return (
@@ -26,20 +26,6 @@ const Categories = () => {
             id="healingCat"
             title="Healing"
             thumbnail={healingCat}
-          ></WorkGridItemCategory>
-        </Section>
-        <Section>
-          <WorkGridItemCategory
-            id="clothingCat"
-            title="Clothing"
-            thumbnail={clothingCat}
-          ></WorkGridItemCategory>
-        </Section>
-        <Section>
-          <WorkGridItemCategory
-            id="medicinal"
-            title="Medicinal"
-            thumbnail={leavesThumbnail}
           ></WorkGridItemCategory>
         </Section>
       </Container>

@@ -1,7 +1,7 @@
 import { Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { WorkGridItem } from '../../components/grid-items'
-import paloSantosThumbnail from '../../public/images/paloSantos/paloSantosBuring01.jpg'
+import paloSantosThumbnail from '../../public/images/paloSantos/paloSantosBuring01Sqaure.jpg'
 import Section from '../../components/section'
 
 const Category = () => {
