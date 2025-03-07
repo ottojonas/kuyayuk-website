@@ -4,7 +4,7 @@ import {
   Container,
   Flex,
   Heading,
-  Link,
+  Link as ChakraLink,
   Menu,
   MenuButton,
   MenuItem,
@@ -16,18 +16,11 @@ import {
 import Logo from './logo.js'
 import ThemeToggleButton from './toggle-theme-button'
 import { HamburgerIcon } from '@chakra-ui/icons'
-const LinkItem = ({ href, path, children }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+
+const LinkItem = ({ href, children, ...props }) => {
   return (
     <NextLink href={href} passHref>
-      <Link
-        p={2}
-        bg={active ? 'glassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-      >
-        {children}
-      </Link>
+      <ChakraLink {...props}>{children}</ChakraLink>
     </NextLink>
   )
 }
@@ -84,13 +77,13 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>Home</MenuItem>
+                  <MenuItem as={ChakraLink}>Home</MenuItem>
                 </NextLink>
                 <NextLink href="/categories" passHref>
-                  <MenuItem as={Link}>Categories</MenuItem>
+                  <MenuItem as={ChakraLink}>Categories</MenuItem>
                 </NextLink>
                 <NextLink href="mailto:kuyayuk@outlook.com" passHref>
-                  <MenuItem as={Link}>Contact Us</MenuItem>
+                  <MenuItem as={ChakraLink}>Contact Us</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

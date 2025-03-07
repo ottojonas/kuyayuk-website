@@ -28,20 +28,6 @@ const Categories = () => {
             thumbnail={healingCat}
           ></WorkGridItemCategory>
         </Section>
-        <Section>
-          <WorkGridItemCategory
-            id="clothingCat"
-            title="Clothing"
-            thumbnail={clothingCat}
-          ></WorkGridItemCategory>
-        </Section>
-        <Section>
-          <WorkGridItemCategory
-            id="medicinal"
-            title="Medicinal"
-            thumbnail={leavesThumbnail}
-          ></WorkGridItemCategory>
-        </Section>
       </Container>
     </Layout>
   )
