@@ -79,8 +79,7 @@ const Page = () => {
           About Kuyay
         </Heading>
         <p>
-          Providing an authentic and original Peruvian experience to those who
-          want to give it a try.
+          Providing authentic Peruvian products since 2024
         </p>
       </Section>
 
