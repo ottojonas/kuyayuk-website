@@ -6,7 +6,7 @@ import {
   Heading,
   Icon,
   Link as ChakraLink,
-  Link, // Add this import
+  Link,
   List,
   ListItem,
   SimpleGrid,
@@ -65,7 +65,7 @@ const Page = () => {
             overflow="hidden"
           >
             <Image
-              src="/images/logoTemplate/plainIcon.jpg"
+              src="/images/logoTemplate/logoanime.jpg"
               alt="frontImage"
               width="100"
               height="100"
@@ -78,9 +78,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           About Kuyay
         </Heading>
-        <p>
-          Providing authentic Peruvian products since 2024
-        </p>
+        <p>Providing authentic Peruvian products since 2024</p>
       </Section>
 
       <Section delay={0.2}>
